@@ -1,0 +1,82 @@
+{
+    "cars": [
+        {
+            "carType": "Sedan",
+            "brand": "Toyota",
+            "carModel": "Corolla",
+            "image": "images\/toyota.png",
+            "yearOfManufacture": 2020,
+            "mileage": "30,000 km",
+            "fuelType": "Gasoline",
+            "available": true,
+            "pricePerDay": 50,
+            "description": "A reliable and fuel-efficient sedan perfect for daily commuting and city driving.",
+            "vin": "1HGBH41JXMN109186"
+        },
+        {
+            "carType": "SUV",
+            "brand": "Honda",
+            "carModel": "CR-V",
+            "image": "images\/honda.png",
+            "yearOfManufacture": 2019,
+            "mileage": "45,000 km",
+            "fuelType": "Gasoline",
+            "available": true,
+            "pricePerDay": 70,
+            "description": "Spacious and versatile SUV, great for family trips and outdoor adventures.",
+            "vin": "2HGFC2F60KH123456"
+        },
+        {
+            "carType": "Coupe",
+            "brand": "Ford",
+            "carModel": "Mustang",
+            "image": "images\/ford.png",
+            "yearOfManufacture": 2021,
+            "mileage": "15,000 km",
+            "fuelType": "Gasoline",
+            "available": false,
+            "pricePerDay": 120,
+            "description": "A powerful and stylish coupe offering an exhilarating driving experience.",
+            "vin": "1FA6P8TH6J5134567"
+        },
+        {
+            "carType": "Sedan",
+            "brand": "BMW",
+            "carModel": "3 Series",
+            "image": "images\/bmw.png",
+            "yearOfManufacture": 2022,
+            "mileage": "8,000 km",
+            "fuelType": "Gasoline",
+            "available": true,
+            "pricePerDay": 90,
+            "description": "Luxury sedan with premium interior and advanced technology features.",
+            "vin": "WBA8E9G50KNU12345"
+        },
+        {
+            "carType": "SUV",
+            "brand": "Mazda",
+            "carModel": "CX-5",
+            "image": "images\/mazda.png",
+            "yearOfManufacture": 2021,
+            "mileage": "25,000 km",
+            "fuelType": "Gasoline",
+            "available": true,
+            "pricePerDay": 75,
+            "description": "Stylish compact SUV with excellent fuel economy and smooth handling.",
+            "vin": "JM3KFBCM5L0123456"
+        },
+        {
+            "carType": "Wagon",
+            "brand": "Honda",
+            "carModel": "Pilot",
+            "image": "images\/hondap.png",
+            "yearOfManufacture": 2020,
+            "mileage": "35,000 km",
+            "fuelType": "Gasoline",
+            "available": true,
+            "pricePerDay": 85,
+            "description": "Large family wagon with three rows of seating and plenty of cargo space.",
+            "vin": "5FNYF6H91MB123456"
+        }
+    ]
+}

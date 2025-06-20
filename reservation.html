@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Reservation - Car Rental System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container" onclick="goToHomepage()" style="display: flex; align-items: center; cursor: pointer; gap: 2px; ">
+                <img src="images/logo.svg" alt="Car Rental Logo" class="logo">
+                <h1 class="logo-title" style="color: white; font-size:x-large;">TripDrives</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h2>Car Reservation</h2>
+            
+            <div id="noCarSelected" class="message-box" style="display: none;">
+                <p>Please select a car first to make a reservation.</p>
+                <button onclick="goToHomepage()" class="btn btn-primary">Choose a Car</button>
+            </div>
+            
+            <div id="carDetailsSection" style="display: none;">
+                <div class="car-details-card">
+                    <h3>Selected Car</h3>
+                    <div id="carDetails" class="car-info">
+                    </div>
+                </div>
+                
+                <div id="carUnavailable" class="message-box error" style="display: none;">
+                    <p>Sorry, this car is no longer available for rental.</p>
+                    <button onclick="goToHomepage()" class="btn btn-primary">Choose Another Car</button>
+                </div>
+                
+                <div id="reservationFormSection" style="display: none;">
+                    <div class="reservation-form-card">
+                        <h3>Rental Information</h3>
+                        <form id="reservationForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="customerName">Full Name *</label>
+                                    <input type="text" id="customerName" name="customerName" required>
+                                    <div class="validation-message" id="nameError"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phoneNumber">Phone Number *</label>
+                                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+1234567890" required>
+                                    <div class="validation-message" id="phoneError"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <div class="validation-message" id="emailError"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="driverLicense">Driver's License Number *</label>
+                                    <input type="text" id="driverLicense" name="driverLicense" required>
+                                    <div class="validation-message" id="licenseError"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="startDate">Rental Start Date *</label>
+                                    <input type="date" id="startDate" name="startDate" required>
+                                    <div class="validation-message" id="startDateError"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="rentalPeriod">Rental Period (Days) *</label>
+                                    <input type="number" id="rentalPeriod" name="rentalPeriod" min="1" max="365" required>
+                                    <div class="validation-message" id="periodError"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="total-price-section" id="totalPriceSection" style="display: none;">
+                                <div class="price-breakdown">
+                                    <div class="price-row">
+                                        <span>Price per day:</span>
+                                        <span id="pricePerDay">$0</span>
+                                    </div>
+                                    <div class="price-row">
+                                        <span>Number of days:</span>
+                                        <span id="numberOfDays">0</span>
+                                    </div>
+                                    <div class="price-row total">
+                                        <span><strong>Total Price:</strong></span>
+                                        <span id="totalPrice"><strong>$0</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-buttons">
+                                <button type="button" id="cancelBtn" class="btn btn-secondary" onclick="cancelReservation()">Cancel</button>
+                                <button type="submit" id="submitBtn" class="btn btn-primary" disabled>Submit Order</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div id="orderConfirmation" class="message-box success" style="display: none;">
+                    <h3>Order Placed Successfully!</h3>
+                    <p>Your rental order has been placed. Please confirm your order to finalize the reservation.</p>
+                    <div class="confirmation-buttons">
+                        <button id="confirmOrderBtn" class="btn btn-success">Confirm Order</button>
+                        <button onclick="goToHomepage()" class="btn btn-secondary">Back to Homepage</button>
+                    </div>
+                </div>
+                
+                <div id="orderError" class="message-box error" style="display: none;">
+                    <h3>Order Failed</h3>
+                    <p id="orderErrorMessage">Sorry, the car is no longer available. Please choose another car.</p>
+                    <button onclick="goToHomepage()" class="btn btn-primary">Choose Another Car</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
