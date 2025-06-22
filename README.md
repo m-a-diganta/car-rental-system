@@ -18,9 +18,10 @@ Website URL: http://rentalapp-env.eba-bn9rucmk.us-east-1.elasticbeanstalk.com/
 - Real-time car availability updates
 
 <h3>Technical Details</h3>
+
 Frontend Technologies
 - HTML5
-- CSS3**: Modern styling with flexbox and grid layouts
+- CSS3
 - JavaScript 
 - Responsive Design
 
