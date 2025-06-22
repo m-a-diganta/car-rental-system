@@ -6,6 +6,7 @@ Website URL: http://rentalapp-env.eba-bn9rucmk.us-east-1.elasticbeanstalk.com/
  A modern, responsive web-based car rental system built with HTML, CSS, JavaScript (jQuery), and PHP. This application allows users to browse available cars, filter by preferences, and make rental reservations with a smooth, user-friendly interface.
 
 <h3>Features</h3>
+
 - View all available cars in a clean grid layout
 - Real-time search with auto-suggestions
 - Filter by car type, brand, and availability
