@@ -1,7 +1,5 @@
 <h1>Online Car Rental System using AJAX and JSON</h1>
 
-Website URL: http://rentalapp-env.eba-bn9rucmk.us-east-1.elasticbeanstalk.com/
-
 <h3>Description</h3>
  A modern, responsive web-based car rental system built with HTML, CSS, JavaScript (jQuery), and PHP. This application allows users to browse available cars, filter by preferences, and make rental reservations with a smooth, user-friendly interface.
 
